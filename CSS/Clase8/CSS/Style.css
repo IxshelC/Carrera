@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+/* Menú */
+
+nav{
+    background-color: rgba(41, 8, 8, 0.967);
+    color:rgb(247, 246, 255);
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px 20px;
+}
+
+nav > ul{
+    list-style-type: none;
+    display: flex; /* Cuando se mete un flex se convierte en texto en línea */
+    justify-content: center;
+    height: 80px;
+}
+
+a{
+    text-decoration: none;
+    color: darkorange;
+}
+
+nav > ul >  a,
+nav > ul >  div{
+    padding: 10px 20px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav > ul > a:hover,
+nav > ul > div:hover{
+    background-color: rgb(112, 63, 16);
+    cursor: pointer;
+}
+
+nav> ul > div #Musica{
+    position: relative;
+    
+}
+#Musica:hover ~ #Musica1{
+    display: block;
+
+}
+
+#Musica1{
+    color: rgb(0, 0, 0);
+    background-color:darkorange;
+    list-style-type: none;
+    position: absolute;
+    bottom: 189px;
+    display: none;
+}
+
+#Musica1 li{
+    padding: 10px 12px;
+}

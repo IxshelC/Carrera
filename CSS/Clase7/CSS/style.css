@@ -1,0 +1,100 @@
+h1{
+    text-align: center;
+}
+
+code{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+div code{
+    background-color: blue;
+}
+
+/* Pone el background a los hijos de div directo */
+div > code{
+    background-color: blueviolet;
+}
+
+
+div  pre  code{
+    background-color: seagreen ;
+}
+
+
+div code{
+    background-color: rgb(255, 0, 234);
+}
+
+
+div+p{
+    background-color: rgb(255, 157, 11);
+    color: rgb(243, 251, 255);
+}
+
+
+/* + */
+
+/* Selecciona el elemento que esta enseguida de equos */
+div + p{
+    background-color: slateblue;
+}
+
+
+/* - * /
+
+sselecciona todos los elementos que estan despues de equis */
+
+div ~ p{
+    background-color: red;
+}
+
+
+#Sec1{
+    background-color: slateblue;
+}
+
+html> body>section{
+    background-color: springgreen;
+}
+
+code.amarilllo{
+    background-color: yellow;
+}
+
+p.amarilllo{
+    background-color: violet;
+}
+
+section p.amarilllo{
+background-color:rgb(255, 157, 11);
+}
+
+.amarilllo{
+color: tomato;
+font-weight: bold;
+}
+
+#Sec1{
+    background-color: rgb(19, 139, 127) !important ; 
+    color: rgb(255, 247, 0);
+}
+
+
+/* PSEUDOELEMENTOS */
+#Ola{
+    height: 50px;
+    background-color: blue;
+    color: aliceblue;
+}
+
+#Ola::after{
+    content:url(../img/icon.png);
+}
+
+
+/* Antes del contenido*/
+#Ola::before{
+    content: url(../img/icon.png);
+}

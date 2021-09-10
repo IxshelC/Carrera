@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+#h{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic
+    
+    
+}
+
+/* TEXTO CON SHADOW */
+#h2{
+    color:blue;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: blueviolet 5px 5px 5px;
+    text-decoration: overline;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+}
+
+section{
+    width: 300px;
+    height: 130px;
+    background-color: rgb(12, 78, 104);
+    color: chartreuse;
+
+    /* BORDE */
+
+    /* border: 2px solid rgb(255, 0, 140) ; */
+    /*border: 2px dotted rgb(255, 0, 140) ;*/
+    /*border: 10px double rgb(255, 0, 140) ;*/
+    /*border: 10px groove rgb(255, 0, 140) ;*/
+    /*border: 10px dashed rgb(255, 0, 140) ;*/
+    /*border: 10px dotted rgb(255, 0, 140) ;*/
+    /*border: 10px ridge rgb(255, 0, 140) ;*/
+    /*border: 10px inset rgb(255, 0, 140) ;*/
+    border: 10px outset rgb(255, 0, 140) ;
+
+
+    /* MARGEN */
+
+
+    margin: 10px;
+
+
+    /* PADDING */
+
+    padding: 10px;
+}
+
+#Seccion2{
+
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+
+    /* BORDE TOP */
+    background-color: rgb(55, 233, 0);
+    border-top-color: darkblue;
+    border-top-width: 8px;
+    border-top-style: dashed;
+
+    /* BORDE IZQUIERDO */
+
+    border-left-color: rgb(255, 0, 0);
+    border-left-width: 8px;
+    border-left-style: double;
+
+    /* BORDE DERECHO */
+
+    border-right-color: rgb(125, 16, 187);
+    border-right-width: 8px;
+    border-right-style: dotted;
+
+    /* BORDE ABAJO */
+
+    border-bottom-color:rgb(5, 158, 179) ;
+    border-bottom-style: groove;
+    border-bottom-width: 15px;
+
+}
+
+#Seccion3{
+    border:1px none rgb(0, 0, 0);
+    width: 150px;
+    height: 150px;
+
+    /* Radius redondea las esquinas */
+    /*border-radius: 50px; /* Para crear un circulo se pone un border-radius 50% */
+    /*border-top-left-radius: 50px; */ /* Redondea esquina izquierda superior*/
+
+    border-radius: 10% 30% 20%; /* Redondear todas las esquinas en un solo radius*/
+}
+
+#Seccion4{
+    border-left:2px dashed red;
+    border-right:2px dashed red;
+    border-top:2px dashed red;
+    border-bottom:2px dashed red;
+
+    /* MARGEN A LA IZQUIERDA */
+
+   /*  margin-left: 50px; */
+
+   /*  margin:0 0 0 50px; */
+/* 
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 30px;
+padding-left: 10px;
+ */
+
+margin-left: auto;
+
+/* padding: 80px 5px; */
+
+/* padding: 10px 20px 30px 80px;*/
+
+padding:50px 20px 80px;
+    
+}
+
+#Seccion5{
+    /*margin: 10% 20% 30% 40%; */
+
+    /*margin: 50px 20px;*/
+
+    /* margin: 50px 10px 80px ; */
+
+    margin: 0 auto;
+
+}

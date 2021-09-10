@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FONDO */
+body {
+  background-image: url(../IMG/Fondo2.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+/* Fondo opaco */
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(58, 34, 54, 0.556);
+}
+
+/* Clase Curva "ONDAS "*/
+.curva {
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden; /* elimina el contenido sobrante */
+  line-height: 0;
+}
+
+.curva svg {
+  position: fixed;
+  display: inline;
+  width: calc(160% + 1.3px);
+  height: 130px;
+  transform: rotateY(180deg);
+}
+
+.curva .shape-fill {
+  fill: rgba(0, 255, 255, 0.35);
+}
+
+.menu {
+  position: fixed;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* listas */
+.menu li {
+  display: inline-block; /*No se enciman las listas */
+  margin-left: 11.5px; /*Margen interno  izquierdo */
+  margin-right: 3px; /* Margen interno derecho */
+  margin-top: 9px;
+  background-color: #181c1c;
+  border-radius: 35px 19px 40px 19px; /* Borde */
+  color: black;
+  padding-left: 61px;
+  padding-right: 68px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+
+/* Enlaces */
+.menu li a {
+  text-decoration: overline; /* Linea arriba del texto */
+  color: rgb(255, 255, 255);
+  display: block;
+}
+
+/* Id HOME */
+#Home,
+#qlos {
+  background-color: rgb(184, 46, 83);
+  font-weight: bold;
+}
+
+/* Efecto de listas de menú */
+.menu li:hover {
+  color: #060909;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgb(174, 202, 238) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  -webkit-box-shadow: 0px 0px 17px 4px #0036e8; /* Sombreado */
+  box-shadow: 0px 0px 17px 4px #5c1dd0;
+}
+
+/* Efecto al seleccionar el enlace */
+.menu li a:hover {
+  color: black;
+}
+
+
+/*FUENTE */
+@font-face {
+  font-family: Roblox;
+  src: url(../Brightly\ Crush\ Shine.otf);
+}
+
+/* Caja */
+#Caja {
+  background-color: rgba(0, 0, 0, 0.679);
+  color: white;
+  position: absolute;
+  padding: 30px;
+  width: 397px; /* Tamaño */
+  height: 550px;
+  top: 100px; /* Posición */
+  left: 849px;
+  border-radius: 25px 40px 25px 40px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Título del formulario */
+h1 {
+  position: relative;
+  text-align: center;
+  color: rgb(32, 169, 187);
+  font-family: Roblox; /* Fuente */
+  font-size: 300%; /* Tamaño de la fuente */
+}
+
+/* Párrafo del título */
+p {
+  text-align: justify;
+  margin: 10px;
+}
+
+/* Formulario */
+.formulario {
+  padding: 10px; /* Margen interno del Formulario */
+  text-align: center;
+}
+
+/* Casillas del formulario "Inputs" */
+input {
+  width: 90%;
+  border-radius: 15px 32px 13px 32px;
+  padding: 10px;
+  border: rgb(50, 205, 202) 5px outset;
+}
+
+/* Casilla Comentario */
+#commet {
+  height: 100px;
+}
+
+/*Caja del formulario */
+.Caja2 {
+  box-sizing: border-box;
+  position: absolute;
+  height: 180px;
+  width: 85%;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* /*Terminos y condiciones */
+/* #Aceptar {
+  width: 8%;
+} */ 
+
+/* Botón Enviar */
+#Enviar {
+  position: relative;
+  color: rgb(236, 238, 238);
+  font-size: 100%;
+  font-weight: bold;
+  background: -webkit-linear-gradient(
+    to right,
+    #4d77c5,
+    #10d3f5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1f244b,
+    #117e99
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 180px;
+  margin-top: 10px;
+  border: outset;
+}
+
+/* Registrarse */
+#registrate {
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+.formulario input:hover {
+  background-color: rgba(4, 3, 3, 0.563);
+  box-shadow: 0px 0px 17px 4px #23f0ff;
+}
+
+.Caja2 #Enviar:hover {
+  box-shadow: 0px 0px 17px 4px #f9ffff;
+
+}
+
+.Texto{
+  box-sizing: border-box;
+  width: 50%;
+  background-color: #e8003a79;
+  position: relative;
+  top: 200px;
+  left: 20px;
+  border-radius: 25px 25px 25px 25px;
+  padding:10px;
+}
+
+#p2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+#p2 span{
+  background-color: rgba(129, 250, 240, 0.857);
+  color: rgb(155, 22, 95);
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  display: inline-block;
+  font-family:Arial, Helvetica, sans-serif;
+  -webkit-box-shadow: 0px 0px 17px 4px #0036e8; /* Sombreado */
+  box-shadow: 0px 0px 17px 4px #dcd7e686;
+}
+
+#registrate a:active{
+  color: #00bee8;
+}

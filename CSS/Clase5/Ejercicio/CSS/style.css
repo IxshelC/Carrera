@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+li{
+    color: white;
+    display: inline;
+    background-color: rgb(27, 142, 218);
+    padding: 21px 60px ;
+    float: left;
+    
+}
+
+ul{
+   
+    
+
+}
+#id1{
+    background-color: rgb(43, 39, 39);
+}
+
+#id0{
+    background-color: rgb(43, 39, 39) ;
+}
+
+img{
+    width: 100%;
+    
+}
+
+#Sec1{
+    width: 70%;
+    float: left;
+}
+
+#Sec2{
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+    color: honeydew;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+div{
+    width: 80%;
+    margin:auto;
+}
+h3{
+    color: greenyellow;
+}
+body{
+    background-image: url(../IMG/Fondo2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+
+.curva {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curva{
+    position: relative;
+    display: inline-block;
+    width: calc(174% + 0.3px);
+    height: 292px;
+}
+
+.curva{
+    fill: rgba(66, 14, 187, 0.919);
+}
+
+h2{
+    padding: 50px;
+}    

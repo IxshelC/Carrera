@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+h1{
+    text-align: center;
+}
+#Papa{
+    background-color:chartreuse;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 50px;
+    z-index: 2; /* CAPAS */
+    
+}
+
+#Hijo{
+    background-color:blue;
+    width: 150px;
+    height: 80px;
+    z-index: 3;
+    bottom: 0;
+    position:absolute;
+}
+
+ul{
+    background-color: blue;
+}
+nav{
+    position:fixed;
+    top: 10px;
+}
+li{
+    background-color: blue;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    color: cyan;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+
+#Ola{
+    background-color: black;
+    width: 550px;
+    height: 250px;
+    position: sticky;
+}
+
+ri

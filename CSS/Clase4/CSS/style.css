@@ -1,0 +1,125 @@
+
+
+#Caja{
+    background-color: brown;
+    width: 100%;
+    height: 50px;
+    max-width: 80px;
+    min-width: 10px;
+    max-height: 100px;
+}
+
+/*BOX MODEL */
+
+#Caja1{
+    background-color: chartreuse;
+    width: 300px;
+    
+    padding: 50px;
+    border: solid red 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+/* Estas 5 propiedades se ponen cada que se añade una imagen */
+#Fondo{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(146, 56, 146);
+    background-image: url(../Img/Poro.png);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ImagFondo{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(29, 31, 151);
+
+}
+
+img{
+    margin-top: 24px ;
+    margin-left: 130px;
+    width: 50%;
+    height: 50%;
+}
+
+#Degradado{
+    width: 300px;
+    height: 100px;
+    opacity: 0.8;
+    background:  linear-gradient(90deg, rgba(208,148,187,1) 7%, rgba(165,158,241,1) 20%, rgba(168,223,207,1) 33%, rgba(209,175,213,1) 42%, rgba(191,175,220,1) 55%, rgba(168,181,218,1) 66%, rgba(238,174,202,1) 72%, rgba(120,187,219,1) 100%, rgba(148,187,233,1) 100%);
+}
+/
+ul{
+
+    /* Para poner una imagen de item */ 
+    list-style-image:url(../Img/poro.png);
+} */
+
+ol{
+    list-style-position: inside;
+}
+
+li{
+    border: 1px solid black;
+    list-style-type: none; /* Quita los simbolos de la lista*/ 
+    
+}
+
+td,th{
+    border:1px solid rgb(183, 0, 255);
+    padding: 5px;
+    text-align: center;
+}
+
+td:hover{
+    background-color: tomato;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+a{
+    margin: 30px;
+    padding:10px;
+    background-color: teal;
+    color: tomato;
+}
+
+a:link{
+    background-color: brown;
+    
+}
+
+a:link{
+    color: cyan;
+}
+
+/* Indicar un boton cuando se pasa el mouse*/
+a:hover{ 
+    color:darkblue;
+    background-color: black; 
+    border-radius:50%;
+
+}
+
+/* Cuando el link ya está visitado cambia de color es mas importante que el hover */
+a:visited{
+    color: coral;
+    background-color: crimson;
+
+}
+
+/* Cuando le pasas el mouse cambia de color ##### Se pone juntos el active y el focus*/  
+a:active, a:focus{
+    color: darkgreen;
+    background-color: slateblue;
+}
+
+a:focus{
+    background-color: springgreen;
+}

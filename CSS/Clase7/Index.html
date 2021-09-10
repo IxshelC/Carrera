@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Clase 7</title>
+</head>
+
+<body>
+    <h1>ESPECIFICIDAD</h1>
+
+    <section>
+        <div>
+            <code>
+                function codigo(){};
+            </code>
+        </div>
+
+        <code>
+            function codigo1(){};
+        </code>
+
+        <div>
+            <pre>
+            <code>
+                function codigo3(){
+                       
+                };
+            </code>
+            </pre>
+        </div>
+
+        <div>
+            <pre>
+            <code>
+                function codigo3(){
+                       
+                };
+            </code>
+            </pre>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <p>Parrafo1</p>
+            <p>Parrafo2</p>
+        </div>
+
+        <p>Parrafo 1 Despues del div</p>
+        <p>Parrafo 2 Despues del div</p>
+
+        <div>
+            <p>Parrafo3</p>
+            <p>Parrafo4</p>
+        </div>
+
+        <p>Parrafo 3 Despues del div</p>
+        <p>Parrafo 4 Despues del div</p>
+    </section>
+
+    <hr>
+    <section>
+        <p>Parrafo 1</p>
+        <div>
+            <p>Parrafo2</p>
+
+        </div>
+        <p>Parrafo3</p>
+        <code>Hee hee</code>
+        <p>Parrafo 4</p>
+        <p>Parrafo 4</p>
+        <p>Parrafo 4</p>
+        <p>Parrafo 4</p>
+        <p>Parrafo 4</p>
+        <p>Parrafo 4</p>
+        <p>Parrafo 4</p>
+
+
+
+    </section>
+
+    <hr>
+    <section id="Sec1" class="amarilllo">
+        <p>Lorem, ipsum dolor.</p>
+    </section>
+
+    <hr>
+    <section>
+        <p class="amarilllo">Lorem, ipsum dolor.</p>
+        <p class="amarilllo">Lorem, ipsum dolor.</p>
+        <p class="amarilllo">Lorem, ipsum dolor.</p>
+        <code class="amarilllo">Some Code</code>
+    </section>
+
+    <hr>
+
+    <h2>PseudoElementos</h2>
+    <section>
+        <div id="Ola">Alien, esto es un PSeudoElemento </div>
+    </section>
+
+</body>
+
+</html>

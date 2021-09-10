@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Alien.jpg" type="image/png" sizes="32x32">
+    <title>Conctacto</title>
+
+    <style>
+        table,
+        td {
+            border:
+                1px solid rgb(21,
+                    255,
+                    0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="Portada.jpg" width="100%">
+    </header>
+
+    <nav>
+
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="Pasatiempos.html">Pasatiempos</a></li>
+            <li><a href="Música.html">Música</a></li>
+            <li><a href="Series.hmtl">Series</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Conctacto</h1>
+
+        <table>
+            <tr>
+
+                <td colspan="1">
+                    <!-- Aside Izquierdo -->
+                    <aside>
+                        <h2>Redes sociales</h2>
+                        <ul>
+                            <li>Tiktok</li>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Email</li>
+                            <li>Discord</li>
+                        </ul>
+
+                    </aside>
+                </td>
+
+                <td colspan="2">
+                    <!--Casilla de enmedio-->
+                    <article>
+                        <form autocomplete="on"> <!-- "Autocomplete"  es para que guarde los datos ingresados en el servidor -->                          
+                            <label for="name">Nombre</label> <br>
+                            <input type="text" name="" id="name" placeholder="Ingrese su nombre" readonly > <br> <br> <!-- "Readonly" solo deja leer lo que esta en "placeholder" -->
+
+                            <label for="apP">Apellido Paterno</label> <br>
+                            <input type="text" name="" id="apP" disabled > <br><br>
+
+                            <label for="apM">Apellido Materno</label> <br>
+                            <input type="text" name="" id="apM" value="Perez" size="5" > <br> <br> <!-- "Size" cambia de tamaño la casilla -->
+
+                            <label for="contra">Contraseña</label> <br>
+                            <input type="password" name="" id="contra" maxlength="5"> <br> <br> <!-- "Maxlength" es para limitar los caracteres -->
+
+                            <label for="terminos">Aceptar terminos</label> <br>
+                            <input type="checkbox" name="" id="terminos" value="terminos"> <br><br>
+
+
+                            <label for="Promo">Promociones</label> <br>
+                            <input type="checkbox" name="" id="Promo" value="Promociones" checked> <br> <br> <!-- el atributo "Cheched" sirve para seleccionar por defecto la casilla-->
+
+                            <hr>
+
+                            <label for="F">Frío</label> <br>
+                            <input type="radio" name="lenguaje" id="F" value="F"> <br> <br>
+                            <!-- Solo se ocupa cuando se puede seleccionar una opción -->
+
+                            <label for="C">Caliente</label> <br>
+                            <input type="radio" name="lenguaje" id="C" value="C"> <br> <br>
+                            <!-- Para que solo se pueda seleccionar una opcion se pone lenguaje en el "name"-->
+
+                            <label for="T">Templado</label> <br>
+                            <input type="radio" name="lenguaje" id="T" value="T"> <br> <br> <!-- Siempre se tiene que poner el valor "value" en checkbox y radio -->
+
+                            <hr>
+
+                            <label for="email">E-mail</label> <br>
+                            <input type="email" name="" id="email" placeholder="email@gmail.com" required > <br> <br> 
+
+                            <label for="number">Numero</label> <br>
+                            <input type="number" name="" id="number" min="30000" max="60000"> <br> <br> <!-- Max y Min, para establecer un rango -->
+
+                            <label for="tel">Telefono</label> <br>  <!-- "Autofocus" para que la entrada de texto se coloque en esa sección al cargar la página -->
+                            <input type="tel" name="" id="tel" autofocus> <br> <br>
+
+                            <hr>
+
+                            <input type="file" name="" id=""> <br> <br> <!-- "File" Subir un archivo -->
+
+                            <input type="date" name="" id=""> <br> <br> <!-- "Date" Calendario -->
+
+                            <input type="datetime-local" name="" id=""> <br> <br> <!-- "Datetime-local" calendario con horario -->
+
+                            <input type="month" name="" id=""> <br> <br> <!-- "Month" seleccionar mes -->
+
+                            <input type="week" name="" id=""> <br> <br> <!-- "Week" seleccionar semana -->
+
+                            <input type= "url" name="" id=""> <br> <br>
+
+                            <input type="time" name="" id=""> <br> <br>
+
+                            <input type="range" name="" id=""> <br> <br>
+
+                            <input type="color" name="" id=""> <br> <br>
+
+                            <input type="search" name="" id=""> <br> <br>
+
+                            <input type="hidden" name=""> <br> <br>
+
+                            <input type="reset" value="Reset">
+
+                            <input type="submit" name="" id="Enviar">
+
+
+                        </form>
+
+
+                    </article>
+                </td>
+
+
+
+            </tr>
+        </table>
+
+
+
+    </main>
+
+    <footer>
+
+        <div>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Pasatiempos.html">Pasatiempos</a></li>
+                <li><a href="Música.html">Música</a></li>
+                <li><a href="Series.hmtl">Series</a></li>
+            </ul>
+        </div>
+
+        <div></div>
+        <div><strong></strong>©IxshelCorona 2021.</strong>Todos los derechos reservados</div>
+
+    </footer>
+</body>
+
+</html>

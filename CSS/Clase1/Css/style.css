@@ -1,0 +1,68 @@
+/* Comentario */
+
+/*Seleccionador universal */
+*{
+margin: 0%; /* para el margen*/
+color: black;}
+
+h2{
+    font: ;
+}
+
+
+
+
+/* Selector por etiqueta */
+h1{
+    background-color: aqua;
+    color:chartreuse;
+}
+
+p{
+    color: coral;
+    background: rgb(62, 240, 193);
+}
+
+/* Selector de Clases . */
+
+.rojo{
+background-color: red;
+color:black;
+}
+
+.texto-blanco{
+    color: rgb(248, 247, 243);
+}
+
+
+.Texto{
+    color: rgb(0, 38, 255);
+    background-color: rgb(43, 206, 209);
+}
+
+.Texto1{
+    color: pink;
+    background-color: purple;
+}
+
+
+.verde{
+    color: rgba(128, 255, 0, 0.933);
+}
+
+/* Selector de ID  # */
+
+#Azul{
+    color:blue;
+
+
+}
+
+#Parrafos{
+    background-color: rgb(243, 77, 0) ;
+    
+}
+
+#Seccion{
+    color: red;
+}
