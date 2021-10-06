@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    
+}
+
+body{
+    background-color: rgb(15, 13, 23);
+    
+}
+/* Logo de star */
+.logo{
+    width: 80px;
+    margin-right: 31px;
+    margin-left: -6px;
+}
+/*Iconos */
+svg{
+    margin-bottom: -7px; /* altura */
+    padding-right: 7px;
+    
+}
+
+/*Icono de menu responsive */
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top:16px;
+    background-color: rgb(225, 224, 224);
+    border-radius: 100%;
+    font-size: 30px;
+    color: rgb(255, 12, 61);
+    display: none; /* ocultar icono */
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    padding: 10px;
+}
+
+#icon-menu:hover{
+    opacity: 0.8;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.537);
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    top: 0%;
+    position: sticky; /*Fijar la barra */
+}
+
+/*Lista de navegación "Incio, Búsqueda etc" */
+.Menu {
+    /* display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+     */
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+
+.Menu li{
+    /* list-style: none; */
+    padding:21px;
+}
+
+/* Enlaces */
+.Menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size:12px;
+    letter-spacing: 2.5px;
+    padding-bottom: 5px; /*altura de la linea */
+    
+}
+
+/* EFECTO DE LINEA SUBRAYADA */
+.Menu a{
+    transition: background-size 0.3s; /* Duración de la transición */
+    background: linear-gradient(white, rgb(253, 253, 255));  /*Linea */
+    background-position: 0% 100%; /* El primero es 0 abajo, 1 arriba */
+    background-repeat:no-repeat; /* No se repite la linea*/
+    background-size: 0% 2px; /* Tamaño de la linea */
+}
+
+.Menu li:hover >a{ /* El efecto saldrá cuando pasemos el mouse desde el icono */
+    background-size:100% 2px; /*El primero es el largo que abarcará la linea y el segundo es el ancho */
+}
+
+
+/*Imagen alien afuera del despegable*/
+img.user1{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+/* MENÚ DEL ALIEN */
+.Menu1{
+    position: relative; /*Posición */
+    color: rgb(210, 210, 210);
+    /* list-style: none; */
+    display: inline-flex;
+    /* justify-content: flex-end; */
+    padding: 10px 18px; /*Padding del la imagen del alien */
+    right: 0;
+    top: 0;
+}
+
+/* Labels del menú despegable */
+.Menu1 label{
+    padding-right: 8px;
+    padding-left:10px ;
+    text-align: center;
+    margin-block: auto;
+    /* text-decoration: none; */
+    font-size: 15px;
+}
+
+/* Menú despegable*/
+.Despegle{
+    position: absolute;
+    background-color: rgb(19, 19, 19);  /* Fondo de menú despegable */
+    width: 240px; /* Ancho del menú */
+    height: 490px; /* Alto de menú */
+    /* padding-right: 8px; */
+    visibility: hidden; /* Visibilidad del menú */
+    padding: 0px 20px 20px; /*Padding de los lados */
+    right: 0%; /*Posición a la derecha */
+    top: 0%;   /* Posición arriba */
+    border: 0.01rem solid rgb(72,71,71);    /*Borde del menú despegable*/
+    border-radius: 5px; /* Radio del borde */
+    
+}
+
+
+/*Usuario Alien del menú despegable*/
+.alien{
+    margin-left: 90px;
+    padding-top:4px ;
+}
+
+
+/* Imagenes del los perfiles del menú despegable */
+img.user{
+    border-radius: 500px;
+    height: 50px;
+    width: 50px;
+    margin: 5px; 
+}
+
+/* Línea */
+#linea{
+    background-color: rgb(41, 41, 41);
+    height: 1px;
+    margin-top: 5px;
+}
+
+
+.Despegle li{
+    display: flex;
+    
+}
+
+/* Lista de opciones "Editar perfiles, Ajustes, etc */
+.Opciones{
+    list-style: none;
+    margin-top: 12px;
+    padding: 0;
+}
+
+/* Labels de la lista Opciones */
+.Opciones label{
+    padding:0;
+    margin-top: 20px;
+}
+
+
+/*Efecto de visibilidad del menú */
+.Menu1:hover .Despegle{ 
+    visibility: visible;
+}
+
+/* Efecto hover cambio de color al seleccionar los perfiles */
+.Despegle li:hover  {
+    color: rgb(255, 255, 255);
+    
+}
+
+/* MENU ACORT */
+
+li .acort-menu{
+    padding: 0;
+    margin:0;
+}
+
+/* .acort-menu{
+    transition: 3s ease;
+}
+ */
+.acort-links{
+    display: none;
+}
+
+ul.acort-links li{
+    list-style: none;
+    
+}
+
+ul.acort-links{
+    padding: 0;
+    border: 2px solid rgb(106, 106, 106);
+    border-radius: 5px;
+    background: rgb(19, 19, 19);
+}
+
+.acort-links a{
+    padding:10px 15px;
+    margin: 10px;
+}
+
+.acort-menu:hover .acort-links {
+    position: fixed;
+    z-index: 1;
+    display: block;
+}
+
+
+
+
+.portada{
+    padding: 5px;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+
+
+
+
+
+/** RESPONSIVE **/
+@media screen and (min-width:300px){ 
+
+    .Menu li{
+        padding: 2px;
+        
+    }
+
+    .nombres{
+        display: none;
+    }
+
+    .lista-escondida{
+        display: none;
+    }
+
+    .acort-menu{
+        display: initial;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .Menu li{
+    padding: 21px;
+    }
+    .Menu .nombres {
+        display: inline;
+    }
+    .Menu .lista-escondida{
+        display: inline;
+    } 
+    .acort-menu{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1020px) {
+
+    .Menu li{
+    padding: 18px;
+    }
+    .Menu .nombres {
+        display: inline;
+    }
+    .Menu .lista-escondida{
+        display: inline;
+    } 
+    .acort-menu{
+        display: none;
+    }
+
+}
+
