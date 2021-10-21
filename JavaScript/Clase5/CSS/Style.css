@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div.app {
+	height: 100px;
+	background-color: rgb(35, 130, 130);
+	margin: 10px 0;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#popUp{
+	position: absolute;
+	padding: 20px;
+	width: 40%;
+	height: 370px;
+	background-color:rgb(22, 19, 18);
+	margin-left: 30%;
+	margin-top: 20%;
+	border-radius: 50px;
+}
+
+#popUp h2{
+	color: white;
+	text-align: center;
+	padding: 30px;
+}
+
+#popUp p{
+	color: rgb(64, 146, 253);
+	text-align: justify;
+	padding: 10px;
+}
+
+#popUp div{
+	background-color: rgb(0, 145, 255);
+	width: 60%;
+	margin: auto;
+	padding: 5px;
+	border-radius: 50px;
+	color: wheat;
+	text-align: center;
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+
+#popUp div:hover{
+	background-color: rgb(24, 41, 107);
+	cursor: pointer;
+}
+
+
+/* #containerPopUp{
+	width: 100%;
+	height: 100vh;
+	background-color: gray;
+	position: absolute;
+} */

@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    background: rgb(238,209,174);
+    background: rgb(2,0,36);
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+
+}
+
+#app #screen{
+    padding: 20px;
+    background-color: rgba(252, 255, 248, 0.549);
+    font-size: 35px;
+    box-shadow: inset 1px 1px 20px 0px #441c92;
+    border-radius: 15px;
+    color: rgb(114, 24, 84);
+}
+
+
+#app{
+    background-color: rgba(108, 172, 255, 0.878);
+    width: 400px;
+    box-shadow: 1px 1px 20px 12px #ffffff;
+    border: 25px groove rgba(77, 196, 66, 0.378);
+    padding: 10px;
+    border-radius: 35px;
+
+}
+
+#app .btns{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+#app .btns .btn{
+    background-color: rgba(57, 40, 63, 0.871);
+    padding: 23px;
+    margin: 4px;
+    border: 3px solid rgb(187, 192, 252);
+    border-radius: 35px;
+    box-shadow: -2px 4px 9px 0px #230505;
+    color: rgb(255, 212, 234);
+}
+
+
+
+#app .btns .btn#color{
+    background: rgba(80, 216, 118, 0.439);
+    border: 3px solid rgb(71 249 39 / 77%);
+    color: rgb(16, 3, 17);
+}
+
+
+#app .btns .btn:hover{
+    cursor: pointer;
+    background-color: rgba(237, 147, 255, 0);
+    border: 3px solid rgb(247, 247, 255);
+    color: rgb(84, 19, 100);
+}
+
+#app .btns #color:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.59);
+    color: rgb(77, 255, 71);
+}
+
+#app .btns #ac{
+
+    border: 3px solid rgb(255, 164, 252);
+    color: rgb(89, 70, 87);
+    background-color: rgba(242, 145, 255, 0.679);
+
+}
+
+#app .btns #igual{
+    background-color: rgb(114, 158, 255);
+    color: rgb(116, 10, 81);
+    border: 3px solid rgb(128, 123, 208);
+}
+
+#app .btns #igual:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 98, 114);
+}
+
+#app .btns #ac:hover{
+    background-color: rgba(175, 108, 250, 0.652);
+    color: rgb(255, 232, 236);
+}

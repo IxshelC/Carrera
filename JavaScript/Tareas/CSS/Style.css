@@ -1,128 +1,151 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0%;
-    
 }
 
-body{
+body {
     background-color: rgb(15, 13, 23);
-    
+    font-family: GlacialIndifference-Regular;
 }
+
 /* Logo de star */
-.logo{
+
+.logo {
     width: 80px;
     margin-right: 31px;
     margin-left: -6px;
 }
+
 /*Iconos */
-svg{
-    margin-bottom: -7px; /* altura */
+
+svg {
+    margin-bottom: -7px;
+    /* altura */
     padding-right: 7px;
-    
 }
 
 /*Icono de menu responsive */
-#icon-menu{
+
+#icon-menu {
     width: 50px;
     height: 50px;
     position: absolute;
     right: 20px;
-    top:16px;
+    top: 16px;
     background-color: rgb(225, 224, 224);
     border-radius: 100%;
     font-size: 30px;
     color: rgb(255, 12, 61);
-    display: none; /* ocultar icono */
+    display: none;
+    /* ocultar icono */
     align-items: center;
     justify-content: center;
-    cursor:pointer;
+    cursor: pointer;
     padding: 10px;
 }
 
-#icon-menu:hover{
+#icon-menu:hover {
     opacity: 0.8;
 }
-nav{
+
+header {
+    top: 0%;
+    position: sticky;
+    z-index: 3;
+}
+
+nav {
     background-color: rgba(0, 0, 0, 0.537);
     cursor: pointer;
     width: 100%;
     display: flex;
-    font-family: 'Nunito', sans-serif;
     justify-content: space-between;
+    /* Espaciado entre letras */
     align-items: center;
     font-weight: bolder;
-    top: 0%;
-    position: sticky; /*Fijar la barra */
 }
 
 /*Lista de navegación "Incio, Búsqueda etc" */
+
 .Menu {
     /* display: flex;
     flex-flow: row wrap;
     list-style: none;
      */
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: nowrap;
     list-style: none;
     align-items: center;
     align-content: space-between;
     justify-content: space-between;
 }
 
-
-.Menu li{
+.Menu li {
     /* list-style: none; */
-    padding:21px;
+    padding: 25px 20px;
 }
 
 /* Enlaces */
-.Menu a{
+
+.Menu a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-size:12px;
+    font-size: 12px;
     letter-spacing: 2.5px;
-    padding-bottom: 5px; /*altura de la linea */
-    
+    padding-bottom: 5px;
+    /*altura de la linea */
 }
 
 /* EFECTO DE LINEA SUBRAYADA */
-.Menu a{
-    transition: background-size 0.3s; /* Duración de la transición */
-    background: linear-gradient(white, rgb(253, 253, 255));  /*Linea */
-    background-position: 0% 100%; /* El primero es 0 abajo, 1 arriba */
-    background-repeat:no-repeat; /* No se repite la linea*/
-    background-size: 0% 2px; /* Tamaño de la linea */
+
+.Menu a {
+    transition: background-size 0.3s;
+    /* Duración de la transición */
+    background: linear-gradient(white, rgb(253, 253, 255));
+    /*Linea */
+    background-position: 0% 100%;
+    /* El primero es 0 abajo, 1 arriba */
+    background-repeat: no-repeat;
+    /* No se repite la linea*/
+    background-size: 0% 2px;
+    /* Tamaño de la linea */
 }
 
-.Menu li:hover >a{ /* El efecto saldrá cuando pasemos el mouse desde el icono */
-    background-size:100% 2px; /*El primero es el largo que abarcará la linea y el segundo es el ancho */
+.Menu li:hover>a {
+    /* El efecto saldrá cuando pasemos el mouse desde el icono */
+    background-size: 100% 2px;
+    /*El primero es el largo que abarcará la linea y el segundo es el ancho */
 }
-
 
 /*Imagen alien afuera del despegable*/
-img.user1{
+
+img.user1 {
     border-radius: 50px;
     height: 50px;
     width: 50px;
 }
 
 /* MENÚ DEL ALIEN */
-.Menu1{
-    position: relative; /*Posición */
+
+.Menu1 {
+    position: relative;
+    /*Posición */
     color: rgb(210, 210, 210);
     /* list-style: none; */
     display: inline-flex;
     /* justify-content: flex-end; */
-    padding: 10px 18px; /*Padding del la imagen del alien */
+    padding: 9px 24px;
+    /*Padding del la imagen del alien */
     right: 0;
     top: 0;
 }
 
 /* Labels del menú despegable */
-.Menu1 label{
+
+.Menu1 label {
     padding-right: 8px;
-    padding-left:10px ;
+    padding-left: 10px;
     text-align: center;
     margin-block: auto;
     /* text-decoration: none; */
@@ -130,104 +153,122 @@ img.user1{
 }
 
 /* Menú despegable*/
-.Despegle{
-    position: absolute;
-    background-color: rgb(19, 19, 19);  /* Fondo de menú despegable */
-    width: 240px; /* Ancho del menú */
-    height: 490px; /* Alto de menú */
-    /* padding-right: 8px; */
-    visibility: hidden; /* Visibilidad del menú */
-    padding: 0px 20px 20px; /*Padding de los lados */
-    right: 0%; /*Posición a la derecha */
-    top: 0%;   /* Posición arriba */
-    border: 0.01rem solid rgb(72,71,71);    /*Borde del menú despegable*/
-    border-radius: 5px; /* Radio del borde */
-    
-}
 
+.Despegle {
+    position: absolute;
+    visibility: hidden;
+    /* Visibilidad del menú */
+    padding: 0px 19px 19px;
+    /*Padding de los lados */
+    right: 0%;
+    /*Posición a la derecha */
+    top: 0%;
+    /* Posición arriba */
+    border-radius: 5px;
+    /* Radio del borde */
+    transition: height .3s ease-out;
+    /* transición del menu alien */
+    height: 100%;
+    /* Altura de la transición */
+    /* padding-right: 8px; */
+}
 
 /*Usuario Alien del menú despegable*/
-.alien{
+
+.alien {
     margin-left: 90px;
-    padding-top:4px ;
+    padding-top: 4px;
 }
 
-
 /* Imagenes del los perfiles del menú despegable */
-img.user{
+
+.Despegle .user {
     border-radius: 500px;
     height: 50px;
     width: 50px;
-    margin: 5px; 
+    margin: 5px;
 }
 
 /* Línea */
-#linea{
+
+#linea {
     background-color: rgb(41, 41, 41);
     height: 1px;
-    margin-top: 5px;
+    margin: 9px 0 11px;
 }
 
-
-.Despegle li{
+.Despegle li {
     display: flex;
-    
 }
 
 /* Lista de opciones "Editar perfiles, Ajustes, etc */
-.Opciones{
+
+.Opciones {
     list-style: none;
     margin-top: 12px;
     padding: 0;
 }
 
 /* Labels de la lista Opciones */
-.Opciones label{
-    padding:0;
+
+.Opciones label {
+    padding: 0;
     margin-top: 20px;
 }
 
-
 /*Efecto de visibilidad del menú */
-.Menu1:hover .Despegle{ 
+
+.Menu1:hover .Despegle {
     visibility: visible;
+    border-left: 0.01rem solid rgb(72, 71, 71);
+    /*Borde del menú despegable*/
+    border-bottom: 0.01rem solid rgb(72, 71, 71);
+    /*Borde del menú despegable*/
+    background-color: rgb(19, 19, 19);
+    /*     width: 240px; */
+    /* Ancho del menú */
+    height: 562px;
+    /* Alto de menú */
+    z-index: 1000;
 }
 
 /* Efecto hover cambio de color al seleccionar los perfiles */
-.Despegle li:hover  {
+
+.Despegle li:hover {
     color: rgb(255, 255, 255);
-    
 }
 
-/* MENU ACORT */
-
-li .acort-menu{
-    padding: 0;
-    margin:0;
+.Despegle li:hover user1 {
+    position: absolute;
+    border-radius: 500px;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
 }
+
+/** MENU ACORT (3 puntitos) */
 
 /* .acort-menu{
-    transition: 3s ease;
-}
- */
-.acort-links{
+    transition: 1s ease;
+} */
+
+.acort-links {
     display: none;
 }
 
-ul.acort-links li{
+ul.acort-links li {
     list-style: none;
-    
 }
 
-ul.acort-links{
+ul.acort-links {
     padding: 0;
     border: 2px solid rgb(106, 106, 106);
     border-radius: 5px;
     background: rgb(19, 19, 19);
 }
 
-.acort-links a{
-    padding:10px 15px;
+.acort-links a {
+    padding: 8px 8px;
     margin: 10px;
 }
 
@@ -237,76 +278,246 @@ ul.acort-links{
     display: block;
 }
 
+/** MAIN **/
 
+main {
+    padding: 0 0 0 60px;
+}
 
+/** PELÍCULAS **/
 
-.portada{
-    padding: 5px;
-    margin-left: 20px;
-    color: white;
-    font-family: 'Nunito', sans-serif;
+/* -- Título -- */
+
+.Principal h1 {
+    padding-bottom: 26px;
+    color: rgb(255, 255, 255);
+    font-size: 44px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/** BOTONES **/
+
+.Principal {
+    padding: 60px 0 60px 20px;
+    border: none;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    background-color: rgb(15, 13, 23);
+}
+
+.botones {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    font-weight: bold;
+}
+
+.botones::-webkit-scrollbar {
+    display: initial;
+}
+
+.categoria {
+    margin-right: 1rem;
+    word-wrap: none;
+    white-space: nowrap;
+    border-radius: .25rem;
+    border: none;
+    background-color: #4e4a59;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    height: 2.5rem;
+}
+
+.botones button:hover {
+    background-color: #f9f9f9;
+    color: #4e4a59;
 }
 
 
+/** BOTONES 2 **/
 
+    div.botones2{
+        width: 200px;
+        height: 320px;
+        background-color: rgb(35, 30, 30);
+        color: white;
 
+    }
 
+    .botones2 .categoria1{
+        list-style: none;
+    }
 
+    .botones2 .categorias2{
+        list-style: none;
+    }
 
+/** CARRUSEL **/
+
+.peliculas-recomendadas .contenedor-carrusel {
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carrusel .carrusel {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    /* las flechas se vayan a la derecha */
+    padding-bottom: 25px;
+}
+
+.peliculas-recomendadas .contenedor-carrusel .carrusel .card {
+    /* width: 25%; */
+    transition: .3s ease all;
+    /* margin: 20px; */
+}
+
+.peliculas-recomendadas .contenedor-principal .carrusel .card img {
+    /* min-width: 20%; */
+    vertical-align: top;
+    border-radius: 5px;
+    box-shadow: 5px 6px 7px 0px rgb(0 0 0);
+    width: 20vw;
+    margin: 15px;
+}
+
+.peliculas-recomendadas .contenedor-principal .carrusel .card img:hover {
+    border: 3px solid white;
+    width: 21vw;
+    transition: border 300ms ease-out .1s;
+
+}
+
+/** CONTENEDOR PRINCIPAL Y FLECHAS  **/
+
+.peliculas-recomendadas {
+    color: white;
+    /* background-color:rgb(255, 0, 0); */
+    padding-bottom: 20px;
+}
+
+/* Título */
+
+.peliculas-recomendadas>h3 {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .Flecha-izq, .peliculas-recomendadas .contenedor-principal .Flecha-der {
+    position: absolute;
+    /* posiciona las flechas a los lados  del contenedor*/
+    border: none;
+    background-color: rgba(237, 28, 28, 0);
+    height: 50%;
+    width: 50px;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0);
+}
+
+.peliculas-recomendadas .contenedor-principal .Flecha-der:hover {
+    color: white;
+    font-size: 30px;
+}
+
+.peliculas-recomendadas .contenedor-principal .Flecha-izq:hover {
+    color: white;
+    font-size: 30px;
+}
+
+.peliculas-recomendadas .contenedor-principal .Flecha-izq {
+    left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .Flecha-der {
+    right: 0;
+}
+
+/* FUENTE */
+
+@font-face {
+    font-family: GlacialIndifference-Regular;
+    src: url(../Fuentes/GlacialIndifference-Regular.otf);
+}
+
+/** ANIMACIÓN **/
+
+@keyframes showprofiles {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
 
 /** RESPONSIVE **/
-@media screen and (min-width:300px){ 
 
-    .Menu li{
-        padding: 2px;
-        
-    }
-
-    .nombres{
+@media screen and (min-width:1000px) {
+    /* Arriba de 1000px se respetan los estilos */
+    li.acort-menu {
+        /* Arriba de 1000px se oculta el menu de 3 puntitos */
         display: none;
-    }
-
-    .lista-escondida{
-        display: none;
-    }
-
-    .acort-menu{
-        display: initial;
     }
 }
 
-
-@media screen and (min-width:1024px) {
-
-    .Menu li{
-    padding: 21px;
-    }
-    .Menu .nombres {
-        display: inline;
-    }
-    .Menu .lista-escondida{
-        display: inline;
-    } 
-    .acort-menu{
+@media screen and (max-width:1050px) {
+    /* Esconde el menú de puntitos */
+    li.acort-menu {
         display: none;
     }
-
+    /* Esconde los nombres de la barra de navegación */
+    .Menu li a.nombres {
+        display: none;
+    }
+    svg {
+        margin-bottom: -7px;
+        padding: 0;
+    }
 }
 
-@media screen and (min-width:1020px) {
+@media screen and (max-width:692px) {   /* De abajo de px se aplicarán los cambios */
 
-    .Menu li{
-    padding: 18px;
-    }
-    .Menu .nombres {
-        display: inline;
-    }
-    .Menu .lista-escondida{
-        display: inline;
-    } 
-    .acort-menu{
+
+    .Menu .lista-escondida {            /* Esconde los iconos de ESPN, PELÍCULAS y SERIES*/
         display: none;
     }
+    /*Muestra el menú de los 3 puntitos */
+    li.acort-menu {
+        display: flex;
+    }
+}
 
+@media screen and ( max-width:498px) {
+    .Menu {
+        display: flex;
+        flex-flow: nowrap;
+        list-style: none;
+        padding: 0 0px 0px 20px;
+        align-items: center;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 80px;
+        margin-right: 7px;
+        margin-left: -6px;
+    }
 }
 
