@@ -1,6 +1,5 @@
-
 /* Objetos  */
-var powerRangerNigga = {
+/* var powerRangerNigga = {
     color: 'Negro',
     estatura: 1.80,
     genero: 'Ataque',
@@ -11,7 +10,7 @@ var powerRangerNigga = {
         'Videojuegos',
         'Ajedrez'
     ]
-}
+} */
 
 
 /* var powerRangerNigga2 = [
@@ -253,16 +252,15 @@ for (let index = 0; index < tiktokers.length; index++) {
     main.appendChild(element);
 
 
-        var container = document.getElementById('img');
+    var container = document.getElementsByClassName('stars')[index];
 
-    for (let index1 = 0; index1 < tiktokers[index].stars; index1++) {
+    for (let index2 = 0; index2 < tiktokers[index].stars; index2++) {
 
         let img = document.createElement('img');
-        img.src = 'IMG/star.png';
+        img.src = 'img/star.png';
         container.appendChild(img);
 
     }
-
 
     document.getElementsByClassName('bigImg')[index].style.backgroundImage = `url(IMG/Cards/${tiktokers[index].img})`;
 

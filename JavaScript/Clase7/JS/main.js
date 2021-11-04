@@ -15,7 +15,6 @@ function nums(dataNum) {
     document.getElementById('screen').innerHTML = screen;
 }
 
-
 function borrar() {
 
     screen = '0';
@@ -23,33 +22,29 @@ function borrar() {
     document.getElementById('screen').innerHTML = screen;
 }
 
+function operacion(op) {
 
-function suma() {
-
-    screen = parseInt(screen);
+    screen = parseFloat(screen);
 
     if (clicks == 0) {
-
         resultado = screen;
         console.log(screen);
-
     } else {
-
+        case1:
         resultado = resultado + screen;
-        console.log(resultado);
+        break;
+
+        case2:
+        resultado = resultado - screen;
+        break
+
+        case3:
+        resultado = resultado * screen;
+        break;
+
+        case4:
+        resultado = resultado / screen;
+        break;
     }
-
-    screen = '0';
-    document.getElementById('screen').innerHTML = screen;
-
-    document.getElementById('screen').innerHTML = resultado;
-    clicks++;
-    console.log('clicks ' + clicks);
-}
-
-
-
-function resta() {
-
-
+    console.log(resultado);
 }

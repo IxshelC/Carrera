@@ -3,15 +3,17 @@
 
 
 var element = document.createElement('h1');
-var container = document.getElementsByTagName('div')[1];
+var container = document.getElementsByTagName('div')[0];
+
+
 
 
 element.innerHTML = 'Hola amiguitos';
 /* container.appendChild(element); */
 
 
-/* 
-* Definiendo función 
+/*
+* Definiendo función
 
 
 */
@@ -30,4 +32,5 @@ function closePopUp() {
 	document.getElementById('popUp').style.display = 'none';
 	console.log('Hola mundo');
 }
+
 

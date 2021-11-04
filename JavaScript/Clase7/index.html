@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Style.css"">
-    <link rel="shortcut icon" href="IMG/icon.png" type="image/x-icon">
+    <link rel=" shortcut icon" href="IMG/icon.png" type="image/x-icon">
     <title>Document</title>
 </head>
+
 <body>
 
     <main id="app">
@@ -19,19 +21,19 @@
             <div class="btn" id="ac" onclick="borrar('')">AC</div>
             <div class="btn" id="color" >C</div>
             <div class="btn" id="color">%</div>
-            <div class="btn" id="color">/</div>
+            <div class="btn" onclick="operacion()4"id="color">/</div>
             <div class="btn" onclick="nums(7)">7</div>
             <div class="btn" onclick="nums(8)">8</div>
             <div class="btn" onclick="nums(9)">9</div>
-            <div class="btn" id="color">x</div>
+            <div class="btn" onclick="operacion(3)" id="color">x</div>
             <div class="btn" onclick="nums(4)">4</div>
             <div class="btn" onclick="nums(5)">5</div>
             <div class="btn" onclick="nums(6)">6</div>
-            <div class="btn" onclick="resta()" id="color">-</div>
+            <div class="btn" onclick="operacion(2)" id="color">-</div>
             <div class="btn" onclick="nums(1)">1</div>
             <div class="btn" onclick="nums(2)">2</div>
             <div class="btn" onclick="nums(3)">3</div>
-            <div class="btn" onclick="suma()" id="color">+</div>
+            <div class="btn" onclick="operacion(1)" id="color">+</div>
             <div class="btn"></div>
             <div class="btn" onclick="nums(0)">0</div>
             <div class="btn"> </div>
@@ -42,6 +44,35 @@
 
     </main>
 
+
+    <!-- <div class="btns">
+
+        <div id="screen">
+            <input type='text' id='resultado' placeholder="0"><br>
+        </div>
+
+
+        <button class="btn">ac</button>
+        <button class="btn">c</button>
+        <button class="btn">%</button>
+        <button class="btn">/</button><br>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">x</button><br>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">-</button><br>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">+</button><br>
+        <button class="btn">0</button>
+        <button class="btn">=</button>
+    </div> -->
+
     <script src="JS/main.js"></script>
 </body>
+
 </html>
