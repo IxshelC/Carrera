@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+
+#input{
+    background-color: rgb(78, 173, 145);
+    padding: 20px;
+}
+
+#input div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#input div label{
+    color: rgb(99, 19, 145);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#input #submit{
+    border: 2px solid rebeccapurple;
+    color: rebeccapurple;
+}
+
+#input #submit:hover{
+    cursor: pointer;
+    color: rgb(68, 0, 255);
+    border: 2px solid rgb(247, 245, 255);
+    background-color: rgb(31, 17, 71);
+}
+
+
+
+#output .usuario{
+    background-color: rgb(31, 17, 71);
+    color: red;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(0, 204, 255);
+}

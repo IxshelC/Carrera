@@ -1,0 +1,16 @@
+{
+    "nombre": "Cotton",
+    "tipo": "Conejo",
+    "edad": "5",
+    "color": "Blanco",
+    "apellido": [
+        "Crown",
+        "Spon",
+        "90"
+    ],
+
+    "vivo": "true",
+    "raza": null
+
+}
+

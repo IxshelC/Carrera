@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+
+div{
+    background-color: rgb(221, 102, 80);
+    padding: 25px;
+}
+
+div span{
+    border: 2px solid rgb(53, 176, 159);
+    padding: 10px 14px;
+
+
+}
+
+div span:hover{
+    background-color: rgb(124, 16, 37);
+    color: cyan;
+} */
+
+
+
+main{
+    background-color: royalblue;
+    height: 505px;
+}
+
+#char{
+    position: absolute;
+}

@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#input{
+    padding: 10px;
+    background-color: rgb(255, 153, 204);
+    color: rgb(255, 236, 236);
+}
+
+.center{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+#input input{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#input div{
+    padding: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    width: 100px;
+}
+
+#input div:hover{
+    cursor: pointer;
+    background-color: violet;
+    color: yellow;
+}
+
+#todos div{
+    background-color: rgb(215, 151, 255);
+    color: rgb(2, 1, 4);
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#todos div:hover{
+    cursor: pointer;
+    background-color: rgb(84, 11, 103);
+    color: mediumslateblue;
+}
+
+#todos div p{
+    margin-bottom: 10px;
+}
+
+
+#todos div.tachado{
+    text-decoration: line-through;
+    background-color: red;
+    color: rgb(0, 0, 0);
+}
+
+#todos div.seleccion{
+    background-color: rgb(88, 255, 85);
+    color: rgb(6, 1, 1);
+    text-decoration:underline ;
+}
+
+
+#todos #Prioridad{
+    font-size: 20px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(169, 20, 139);
+    margin: 0 45px;
+}
+
+#todos #eliminar{
+    background-color:rgb(226, 0, 0);
+    color: white;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+#todos #eliminar:hover{
+    background-color: thistle;
+}
